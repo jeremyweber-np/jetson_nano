@@ -21,6 +21,7 @@ sudo cp protoc-3.8.0/bin/protoc /usr/local/bin/protoc
 
 echo "** Build and install protobuf-3.8.0 libraries"
 export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=cpp
+sudo apt-get install -y libtool m4 automake install autoconf autogen
 cd protobuf-3.8.0/
 ./autogen.sh
 ./configure --prefix=/usr/local
